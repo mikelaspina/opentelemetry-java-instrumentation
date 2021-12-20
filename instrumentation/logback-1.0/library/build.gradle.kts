@@ -3,6 +3,8 @@ plugins {
 }
 
 dependencies {
+  compileOnly("io.opentelemetry:opentelemetry-sdk-logs")
+
   library("ch.qos.logback:logback-classic:1.0.0")
 
   testImplementation(project(":instrumentation:logback-1.0:testing"))
